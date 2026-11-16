@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="jogo">
+        <h1>Adivinhe a Palavra</h1>
+        <p>Tente descobrir a palavra antes que suas tentativas acabem!</p>
+
+        <p id="palavra">_ _ _ _ _</p>
+
+        <p>
+            Tentativas restantes:
+            <span id="tentativas">6</span>
+        </p>
+
+        <label for="letra">Digite uma letra:</label>
+        <input id="letra" type="text" maxlength="1">
+        <button id="btn-tentar" type="button">Tentar</button>
+
+        <p id="mensagem"></p>
+
+        <p>
+            Letras utilizadas:
+            <span id="letras-usadas"></span>
+        </p>
+
+        <button id="btn-reiniciar" type="button">Nova partida</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
